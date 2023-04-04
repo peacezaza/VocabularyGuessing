@@ -74,7 +74,7 @@ public class MainFrame {
 
 
         panelForFirstPage.add(panelForText);
-        panelForFirstPage.add(Box.createRigidArea(new Dimension(0,50)));
+        panelForFirstPage.add(Box.createRigidArea(new Dimension(0,80)));
         panelForFirstPage.add(panelForButton);
 //        Add panel to the panel which hold everything in this page
 
