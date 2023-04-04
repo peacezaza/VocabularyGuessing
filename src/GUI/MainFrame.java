@@ -14,7 +14,6 @@ public class MainFrame {
     private JPanel panelForFirstPage = new JPanel();
     private JPanel panelForPlayPage =new JPanel();
     JPanel panelForBar = new JPanel();
-    private PictureFile pictureFile = new PictureFile();
     private Guess guess = new Guess();
     private ButtonStyles buttonStyles = new ButtonStyles(guess);
     private Level level = new Level();

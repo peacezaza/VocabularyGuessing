@@ -44,9 +44,7 @@ public class Level {
     public int getLevel(){return this.level;}
 
     public void calculateLevel(){
-        System.out.println("Level up!!!");
         this.level += 1;
-        System.out.println("Your level is " + this.level);
         try{
             FileWriter fileWriter = new FileWriter(levelFile);
             fileWriter.write(String.valueOf(this.level));
