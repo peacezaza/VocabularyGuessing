@@ -88,47 +88,6 @@ public class Guess{
         return usingWords.get(index);
     }
 
-    public boolean execute(String action){
-        boolean done = false;
-        if(action.equals("2")){
-            done = true;
-        }
-        else {
-            Word rightWord = rightWord();
-            System.out.println("What is the meaning of this word " + this.usingWords.get(0).getEng());
-            Word wrongWord1 = wrongWord();
-            Word wrongWord2 = wrongWord();
-            Word wrongWord3 = wrongWord();
-            long seed = System.nanoTime();
-            Collections.shuffle(usingWords, new Random(seed));
-            for (int i = 0 ; i<4; i++){
-                int guess = random.nextInt(0,4);
-                System.out.println((i+1) + "." + this.usingWords.get(i).getThai());
-            }
-            System.out.print("Enter your choice: ");
-            int answer = scan.nextInt();
-            
-            int indexOfRightWord = 0, count = 0;
-            for(Word word: usingWords){
-                count +=1;
-                if(rightWord.equals(word)){
-                    indexOfRightWord = count;
-                }
-            }
-
-            if(answer == indexOfRightWord){
-                System.out.println("Correct!!");
-                level.addExperience();
-
-            }
-            else {
-                System.out.println("Wrong!!");
-            }
-            usingWords.clear();
-
-        }
-        return done;
-    }
 
 
 
